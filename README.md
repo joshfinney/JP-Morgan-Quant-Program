@@ -1,79 +1,65 @@
-# 📊 JP-Morgan-Quant-Program
+# JP-Morgan-Quant-Program
 
-This repository mirrors the real-world challenges and scenarios faced by QR professionals daily. Each file contained herein represents a unique task designed to emulate the multifaceted responsibilities of the QR team.
+This repository simulates the intricate scenarios and challenges encountered by Quantitative Research (QR) professionals. Each file encapsulates a distinct task, reflecting the diverse roles of the QR team at JP Morgan.
 
-## 📋 Table of Contents
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features) 
+- [Licence](#licence)
 
-- [🌐 Overview](#overview)
-- [⚙️ Features](#features) 
-- [📝 License](#license)
+## Overview
 
-## 🌐 Overview
+The JP Morgan Forage Programme amalgamates computational mathematics, statistics, and computer science methodologies to address financial data challenges. This repository encompasses:
 
-The JP Morgan Forage Programme merges computational mathematics, statistics, and computer science to tackle financial data challenges. This repository houses specialised modules designed for specific tasks, representing the intricacies of JP Morgan's operations:
+1. **Loan Default Prediction** (`loan_default_predictor.py`): Utilises machine learning for loan default predictions, integrating Exploratory Data Analysis (EDA) and RandomForestClassifier.
+2. **FICO Score Quantisation** (`fico_quantization.py`): Implements KMeans clustering for FICO score categorisation, enhanced by log-likelihood optimisation and illustrative visualisations.
+3. **Dynamic Pricing Modelling** (`pricing_model.py`): A sophisticated pricing model accounting for transactional and storage costs, enriched by dynamic gas pricing strategies.
+4. **Gas Price Estimation** (`gas_price_estimator.py`): Forecasts natural gas prices using time-series data via linear regression, complemented by an interactive interface for on-the-fly estimations.
 
-1. **Loan Default Prediction** (loan_default_predictor.py): Uses machine learning to explore and predict loan defaults, employing Exploratory Data Analysis (EDA) and RandomForestClassifier for accurate predictions.
+Collectively, these modules provide a robust toolkit, addressing the multifarious challenges inherent in modern finance.
 
-2. **FICO Score Quantisation** (fico_quantization.py): Categorises FICO scores through KMeans clustering, supplemented with log-likelihood optimisation and visual representation for clarity.
-
-3. **Dynamic Pricing Modelling** (pricing_model.py): Comprehensive pricing mechanism for transactions, covering transactional and storage costs, underscored by dynamic gas pricing.
-
-4. **Gas Price Estimation** (gas_price_estimator.py): Predicts natural gas prices using time-series data and linear regression, boasting an interactive user interface for real-time predictions.
-
-Together, these modules form a compact suite of solutions, addressing the diverse challenges of contemporary finance.
-
-## ⚙️ Features
+## Features
 
 ### `loan_default_predictor.py`
-- **Comprehensive Data Loading**: Streamlined loading and preparation of dataset from a specified CSV file.
+- **Data Loading**: Efficient loading and preparation from a specified CSV source.
 - **Exploratory Data Analysis (EDA)**:
-  - Display of summary statistics.
-  - Visualization of default distribution.
-  - Pairwise feature relationship plots.
-  - Heatmap showcasing feature correlations.
-- **Data Preprocessing**: Efficient splitting of data into training and test sets.
-- **Random Forest Classifier**:
-  - Model training using RandomForestClassifier.
-  - Evaluation metrics: AUC score, ROC curve, and Precision-Recall curve.
-- **Feature Importance Visualization**: Ranking of features based on their impact.
-- **Expected Loss Calculation**: Financial loss estimation for a given loan using the trained model.
+  - Comprehensive statistical summary.
+  - Visualisation of default patterns.
+  - Insightful feature correlations.
+- **Model**: RandomForestClassifier training and evaluations, including AUC score, ROC curve, and Precision-Recall curve metrics.
+- **Feature Importance**: Visual interpretation of feature significance.
+- **Loss Estimation**: Predictive financial loss calculations.
 
 ### `fico_quantization.py`
-- **Dynamic Data Loading**: Seamless fetching of dataset from a CSV file.
-- **Visual Representation**:
-  - FICO score distribution visualization.
-  - Highlighting of identified score boundaries.
-- **MSE Quantization**: KMeans clustering to bucket FICO scores.
-- **Log-Likelihood Optimisation**: Optimal bucket boundary determination by maximising log-likelihood.
+- **Data Retrieval**: Effortless extraction from a CSV source.
+- **Visual Analysis**:
+  - Distribution insights of FICO scores.
+  - Demarcation of score thresholds.
+- **Quantisation**: KMeans clustering and log-likelihood optimisation for refined bucketing.
 
 ### `pricing_model.py`
-- **Comprehensive Pricing Model**:
-  - Calculation of transaction costs and revenues.
-  - Storage cost computation based on transaction durations.
-- **Detailed Debugging Information**: Cost breakdown for each transaction.
-- **Date-Based Price Series**: Dynamic gas price determination using a date-based dictionary.
-- **Sample Runs**: Illustrative application demonstrations.
+- **Pricing Computation**:
+  - Transactional cost and revenue analysis.
+  - Duration-based storage cost evaluations.
+- **Detailed Insights**: Comprehensive transactional cost breakdown.
+- **Dynamic Pricing**: Date-centric gas price determinations.
 
 ### `gas_price_estimator.py`
-- **Data Parsing & Preprocessing**:
-  - Conversion of CSV string data to a Pandas DataFrame.
-  - Date transformation for linear regression compatibility.
-- **Time-Series Visualisation**: Trend visualisation of natural gas prices against dates.
-- **Linear Regression Analysis**:
-  - Predictive modeling using scikit-learn's LinearRegression.
-  - MSE output for model accuracy assessment.
-- **Interactive Price Estimation**:
-  - Real-time predictions based on user dates.
-  - Robust date format validation.
+- **Data Handling**:
+  - Transformation from CSV to a Pandas DataFrame.
+  - Date adaptation for regression.
+- **Time-Series Analysis**: Visual trends of gas prices against time.
+- **Linear Regression**: Predictive analytics via scikit-learn's LinearRegression.
+- **Interactive Interface**: User-driven predictions with rigorous date validations.
 
-## 📝 License
+## Licence
 
-This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
+This project is licenced under the [MIT Licence](https://choosealicense.com/licenses/mit/).
 
 Copyright (c) 2023 Joshua Finney
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+Permission is granted, free of charge, to any individual obtaining a copy of this software and affiliated documentation (the "Software"), to utilise the Software without restriction, encompassing rights such as copying, modifying, merging, publishing, and distribution, whilst also allowing permissions to whom the Software is furnished, given the following stipulations:
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+The aforementioned copyright notice and this permission notice shall be incorporated in all substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT ANY GUARANTEE OF ANY SORT, BE IT EXPRESS OR IMPLIED, INCLUDING BUT NOT CONFINED TO GUARANTEES OF MERCHANTABILITY, SUITABILITY FOR A SPECIFIC FUNCTION, AND NONINFRINGEMENT. IN NO SCENARIO SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE HELD ACCOUNTABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTUOUS ACTION, RESULTING FROM, OR IN CONNECTION WITH THE SOFTWARE OR ANY UTILISATION OR DEALINGS IN THE SOFTWARE.
