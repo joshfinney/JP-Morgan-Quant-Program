@@ -1,15 +1,15 @@
-# JP-Morgan-Quant-Program
+# 📊 JP-Morgan-Quant-Program
 
-This repository simulates the intricate scenarios and challenges encountered by Quantitative Research (QR) professionals. Each file encapsulates a distinct task, reflecting the diverse roles of the QR team at JP Morgan.
+This repository simulates the intricate scenarios and challenges encountered by Quantitative Research (QR) professionals. Each file encapsulates a distinct task, reflecting the diverse roles of the QR team at JPMorgan Chase & Co.
 
-## Table of Contents
+## 📋 Table of Contents
 - [Overview](#overview)
 - [Features](#features) 
 - [Licence](#licence)
 
-## Overview
+## 🌐 Overview
 
-The JP Morgan Forage Programme amalgamates computational mathematics, statistics, and computer science methodologies to address financial data challenges. This repository encompasses:
+The JPMorgan Chase & Co Forage Programme amalgamates computational mathematics, statistics, and computer science methodologies to address financial data challenges. This repository encompasses:
 
 1. **Loan Default Prediction** (`loan_default_predictor.py`): Utilises machine learning for loan default predictions, integrating Exploratory Data Analysis (EDA) and RandomForestClassifier.
 2. **FICO Score Quantisation** (`fico_quantization.py`): Implements KMeans clustering for FICO score categorisation, enhanced by log-likelihood optimisation and illustrative visualisations.
@@ -18,7 +18,23 @@ The JP Morgan Forage Programme amalgamates computational mathematics, statistics
 
 Collectively, these modules provide a robust toolkit, addressing the multifarious challenges inherent in modern finance.
 
-## Features
+## 🔍 Prerequisites
+
+To run the modules effectively, ensure the following Python libraries are installed:
+
+- `pandas`
+- `numpy`
+- `matplotlib`
+- `seaborn`
+- `scikit-learn`
+- `scipy`
+
+These can be installed using pip: 
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn scipy
+```
+
+## 🛠️ Modules
 
 ### `loan_default_predictor.py`
 - **Data Loading**: Efficient loading and preparation from a specified CSV source.
@@ -52,7 +68,7 @@ Collectively, these modules provide a robust toolkit, addressing the multifariou
 - **Linear Regression**: Predictive analytics via scikit-learn's LinearRegression.
 - **Interactive Interface**: User-driven predictions with rigorous date validations.
 
-## Licence
+## 📝 Licence
 
 This project is licenced under the [MIT Licence](https://choosealicense.com/licenses/mit/).
 
