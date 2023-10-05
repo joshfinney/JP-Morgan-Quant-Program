@@ -1,5 +1,7 @@
 # 📊 JP-Morgan-Quant-Program
 
+This repository mirrors the real-world challenges and scenarios faced by QR professionals daily. Each file contained herein represents a unique task designed to emulate the multifaceted responsibilities of the QR team.
+
 ## 📋 Table of Contents
 
 - [🌐 Overview](#overview)
@@ -10,13 +12,13 @@
 
 The JP Morgan Forage Programme merges computational mathematics, statistics, and computer science to tackle financial data challenges. This repository houses specialised modules designed for specific tasks, representing the intricacies of JP Morgan's operations:
 
-1. Loan Default Prediction (loan_default_predictor.py): Uses machine learning to explore and predict loan defaults, employing Exploratory Data Analysis (EDA) and RandomForestClassifier for accurate predictions.
+1. **Loan Default Prediction** (loan_default_predictor.py): Uses machine learning to explore and predict loan defaults, employing Exploratory Data Analysis (EDA) and RandomForestClassifier for accurate predictions.
 
-2. FICO Score Quantisation (fico_quantization.py): Categorises FICO scores through KMeans clustering, supplemented with log-likelihood optimisation and visual representation for clarity.
+2. **FICO Score Quantisation** (fico_quantization.py): Categorises FICO scores through KMeans clustering, supplemented with log-likelihood optimisation and visual representation for clarity.
 
-3. Dynamic Pricing Modelling (pricing_model.py): Comprehensive pricing mechanism for transactions, covering transactional and storage costs, underscored by dynamic gas pricing.
+3. **Dynamic Pricing Modelling** (pricing_model.py): Comprehensive pricing mechanism for transactions, covering transactional and storage costs, underscored by dynamic gas pricing.
 
-4. Gas Price Estimation (gas_price_estimator.py): Predicts natural gas prices using time-series data and linear regression, boasting an interactive user interface for real-time predictions.
+4. **Gas Price Estimation** (gas_price_estimator.py): Predicts natural gas prices using time-series data and linear regression, boasting an interactive user interface for real-time predictions.
 
 Together, these modules form a compact suite of solutions, addressing the diverse challenges of contemporary finance.
 
