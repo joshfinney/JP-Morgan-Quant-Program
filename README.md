@@ -1,9 +1,14 @@
-# JP-Morgan-Quant-Program
+# 📊 JP-Morgan-Quant-Program
 
+## 📋 Table of Contents
 
-# Features
+- [🌐 Overview](#overview)
+- [⚙️ Features](#features) 
+- [📝 License](#license)
+- 
+## ⚙️ Features
 
-## `loan_default_predictor.py`
+### `loan_default_predictor.py`
 - **Comprehensive Data Loading**: Streamlined loading and preparation of dataset from a specified CSV file.
 - **Exploratory Data Analysis (EDA)**:
   - Display of summary statistics.
@@ -17,15 +22,15 @@
 - **Feature Importance Visualization**: Ranking of features based on their impact.
 - **Expected Loss Calculation**: Financial loss estimation for a given loan using the trained model.
 
-## `fico_quantization.py`
+### `fico_quantization.py`
 - **Dynamic Data Loading**: Seamless fetching of dataset from a CSV file.
 - **Visual Representation**:
   - FICO score distribution visualization.
   - Highlighting of identified score boundaries.
 - **MSE Quantization**: KMeans clustering to bucket FICO scores.
-- **Log-Likelihood Optimization**: Optimal bucket boundary determination by maximizing log-likelihood.
+- **Log-Likelihood Optimisation**: Optimal bucket boundary determination by maximising log-likelihood.
 
-## `pricing_model.py`
+### `pricing_model.py`
 - **Comprehensive Pricing Model**:
   - Calculation of transaction costs and revenues.
   - Storage cost computation based on transaction durations.
@@ -33,11 +38,11 @@
 - **Date-Based Price Series**: Dynamic gas price determination using a date-based dictionary.
 - **Sample Runs**: Illustrative application demonstrations.
 
-## `gas_price_estimator.py`
+### `gas_price_estimator.py`
 - **Data Parsing & Preprocessing**:
-  - Conversion of CSV string data to a pandas DataFrame.
+  - Conversion of CSV string data to a Pandas DataFrame.
   - Date transformation for linear regression compatibility.
-- **Time-Series Visualization**: Trend visualization of natural gas prices against dates.
+- **Time-Series Visualisation**: Trend visualisation of natural gas prices against dates.
 - **Linear Regression Analysis**:
   - Predictive modeling using scikit-learn's LinearRegression.
   - MSE output for model accuracy assessment.
